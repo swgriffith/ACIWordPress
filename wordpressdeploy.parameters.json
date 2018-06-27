@@ -1,0 +1,45 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mysqlName": {
+            "value": "griffwpmysql"
+        },
+        "mysqlVersion": {
+            "value": "5.7"
+        },
+        "skuName": {
+            "value": "GP_Gen5_2"
+        },
+        "skuTier": {
+            "value": "GeneralPurpose"
+        },
+        "skuCapacity": {
+            "value": 2
+        },
+        "skuSizeMB":{
+            "value" : 5120
+        },
+        "skuFamily": {
+            "value": "Gen5"
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "mysqlLogin": {
+            "value": "griffith"
+        },
+        "mysqlPassword": {
+            "value": "JWJIxoN7qdfd6F"
+        },
+        "containerGroupName": {
+            "value": "wordpressCG"
+        },
+        "dnsNameLabel": {
+            "value": "demowordpress"
+        }
+    }
+}
