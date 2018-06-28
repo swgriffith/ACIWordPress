@@ -1,3 +1,6 @@
+# Global Azure Container Instance Wordpress
+
+```
 #Set variables
 RG=<Resource Group Name>
 LOC=<Base Region>
@@ -11,4 +14,4 @@ az group deployment create --name $NAME --template-file wordpressdeploy.json --p
 
 #Execute Script to add a region (dont forget to chmod +x the file)
 ./addregion.sh -g ThrowAwayWordPressDemo -n wordpress -l <New Region Name> -d griffwpmysql
-
+```
